@@ -14,7 +14,7 @@ class DB
         $this->connection = null;
 
         try {
-            $this->connection = new \PDO("mysql:host=" . $this->host . ";port=8101;dbname=" . $this->db_name, $this->username, $this->password);
+            $this->connection = new \PDO("mysql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db_name, $this->username, $this->password);
         } catch (\PDOException $exception) {
             echo "Ошибка соединения: " . $exception->getMessage();
         }
