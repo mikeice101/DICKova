@@ -28,9 +28,9 @@ services:
         image: mysql:8.0
         restart: always
         volumes:
-            - ./tmp/db:/var/lib/mysql
+            - ./tmp/db:/var/www/tmp/db
         environment:
-            MYSQL_DATABASE: root
+            MYSQL_DATABASE: nadyaBD
             MYSQL_ROOT_PASSWORD: root
         user: 1000:1000
         ports:
