@@ -1,7 +1,9 @@
 <?php
+
 require_once ('../vendor/autoload.php');
 
-use App\Developer;
+use App\Components\DB;
 
-$database = new Database();
+
+$database = new DB();
 $db = $database->getConnection();
