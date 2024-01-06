@@ -4,9 +4,9 @@ namespace App\Components;
 class DB
 {
     private $host = "localhost";
-    private $db_name = "employes";
+    private $db_name = "root";
     private $username = "root";
-    private $password = "root";
+    private $password = "";
 
     public function getConnection()
     {
