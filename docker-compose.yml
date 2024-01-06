@@ -16,6 +16,8 @@ services:
         build:
             context: .
             dockerfile: docker/app/Dockerfile
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
         volumes:
             - ./:/var/www
         restart: unless-stopped
