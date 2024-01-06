@@ -3,4 +3,5 @@ require_once ('../vendor/autoload.php');
 
 use App\Developer;
 
-var_dump(Developer::TEST);
+$database = new Database();
+$db = $database->getConnection();
