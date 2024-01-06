@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Routes;
+
 class Route
 {
 
@@ -10,12 +12,15 @@ class Route
 
         switch ($method) {
             case 'GET':
-
-
+                require('../app/Views/Developer.php' );
+                break;
             case 'POST':
+                self::post($url);
+                break;
         }
-
-
+    }
+    private static function post($url)
+    {
     }
 
 }
